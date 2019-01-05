@@ -1,0 +1,32 @@
+{% extends 'housea/base.html' %}
+{% block content %}
+  <div class="jumbotron" id="detail-jumb">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>{{ object.name|capfirst }}</h3>
+          <h5>{{ object.age }}, {{ object.gender }}</h5>
+        </div>
+        <div class="col ml-auto" id="detail-btns">
+          <a class="btn btn-primary" href="{% url 'tenant-edit' object.id object.slug %}"><i class="fas fa-edit"></i> edit</a>
+          <a  class="btn btn-danger" href="{% url 'tenant-delete' object.id object.slug %}"><i class="fas fa-trash"></i> delete</a>
+        </div>
+      </div>
+      <hr>
+      <div id="detail-address">
+        <h5>Address:</h5>
+        <p>{{ object.address }}</p>
+        <p id="address-p">{{ object.city }}, {{ object.country }}</p>
+      </div>
+
+      <h5>Phone list:</h5>
+      <p id="detail-phone-num">{{ object.mobile_1 }}</p>
+      <p id="detail-phone-num">{{ object.mobile_2 }}</p>
+      <p id="detail-phone-num">{{ object.mobile_3 }}</p>
+      <div id="detail-ip">
+        <p>IP location:<span>{{ object.location }}</span></p>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}

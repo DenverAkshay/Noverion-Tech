@@ -1,0 +1,558 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+#map {
+    height: 150px;
+    width:200px
+  }
+header{
+  width:100%;
+  height: 70px;
+  background-color: #457B9D;
+
+}
+nav{
+  padding: 10px 10px;
+}
+nav ul li{
+  display: inline-block;
+}
+.brand{
+  margin-right: 50px;
+  text-decoration: none;
+  list-style: none;
+}
+.brand a{
+  color:#44AF69;
+  transition: .2s;
+}
+.brand a:hover{
+  color:#fff;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+.brand a span{
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nav-item{
+  float:right;
+}
+.Dashboard a{
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+
+}
+.Dashboard a:hover{
+  color:#fff;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+.nav-item a{
+  font-size: 20px;
+  color:#000;
+  font-weight: bold;
+}
+
+.nav-item a:hover{
+  color: #fff;
+}
+
+.dropdown-item:hover{
+  color:#fff;
+  background-color: #000;
+}
+
+#home-jumb{
+  margin:100px 50px;
+  padding-top: 20px;
+}
+#nav-custom{
+  margin-bottom: 30px;
+}
+#nav-custom{
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+#searchbar{
+  width:600px;
+  border-radius: 10px;
+}
+#dashboard-brand{
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  margin-right: -140px;
+}
+#dashboard-brand:hover{
+  transform: scale(1.1);
+  text-shadow: 0 2px 15px rgba(0,0,0,0.5);
+}
+#add-tenant{
+  font-size: 15px;
+}
+#add-tenant{
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+.fa-plus-circle{
+  color:red;
+}
+
+#data-cont{
+  border: 0.5px solid rgba(0,0,0,0.5);
+  border-radius: 5px;
+  background-color: #FFF;
+  margin-top: 3px;
+}
+
+ /* tenant detail page */
+ #detail-jumb{
+   margin:50px 300px;
+   border-radius:10px;
+ }
+
+ #detail-jumb .container{
+   margin:-15px 0px;
+ }
+
+ #detail-jumb .container h3{
+  font-size: 30px;
+  font-weight:700;
+ }
+
+ #detail-jumb .container h5{
+  font-size: 20px;
+  font-weight:400;
+ }
+
+ #detail-address h5{
+   font-size: 10px;
+ }
+
+ #detail-address p{
+   margin-left: 20px;
+   font-family: sans-serif;
+ }
+ #address-p{
+   margin-top: -17px;
+ }
+
+ #detail-phone-num{
+   margin-top: -8px;
+   margin-left: 20px;
+   font-family: sans-serif;
+ }
+#detail-ip p{
+  font-size:20px;
+  font-weight: 400;
+}
+
+#detail-ip p span{
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+#detail-btns a{
+  margin-bottom: -70px;
+  margin-left: 30px;
+  border-radius: 15px;
+}
+
+/* home page */
+#add-tenant{
+  text-decoration: none;
+  font-weight: bold;
+}
+#add-tenant:hover{
+  text-transform: uppercase;
+}
+
+#data-cont{
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+#data-cont:hover{
+  box-shadow:5px 5px 15px rgba(0,0,0,0.5);
+  transform: translateY(-2px);
+}
+
+#data-cont .row .col h3 a{
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#data-cont .row .col h3 a:hover{
+  text-decoration: none;
+  font-size: 30px;
+}
+
+#data-cont .row .col small{
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+#home-place{
+  margin-top: auto;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+#home-place i{
+  color:#248232;
+}
+
+#home-detail-btn{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#home-detail-btn a{
+  margin-left: 200px;
+  transition: 0.3s;
+}
+
+#home-detail-btn a:hover{
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+  transform: translateY(-3px);
+}
+
+/* edit tenant */
+#edit-jumb{
+  margin:50px 50px;
+  border-radius: 12px;
+}
+
+#edit-jumb .container{
+  margin:-20px 0px;
+}
+
+#edit-jumb .container h3{
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#e-name, #e-age ,#e-num1, #e-gender, #e-num2, #e-num3, #e-address, #e-city, #e-country{
+  border-radius: 7px;
+  background-color: transparent;
+  background: rgba(0,0,0,0.7);
+  color:white;
+  padding: 2px 2px;
+  transition: 0.3s;
+  box-shadow: 2px 3px 15px rgba(0,0,0,0.5);
+}
+#e-name:hover, #e-age:hover,#e-gender:hover ,#e-num1:hover, #e-num2:hover,
+ #e-num3:hover, #e-address:hover, #e-city:hover, #e-country:hover{
+  transform: translateY(-3px);
+}
+#e-name{
+  margin-left: 28px;
+}
+#e-age{
+  margin-left: 40px;
+}
+#e-gender{
+  margin-left: 16px;
+}
+#e-city{
+  margin-left: 35px;
+}
+
+#e-country{
+  margin-left: 3px;
+}
+#e-num1, #e-num2, #e-num3{
+  margin-left: 5px;
+}
+#e-address{
+  height: 100px;
+  margin-left: 8px;
+}
+#edit-cancel{
+  margin-left: 50px;
+}
+
+.submit-edit-form{
+  margin-left: 50px;
+}
+
+/* delete tenant */
+#jumb-delete{
+  margin:50px 200px;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+#jumb-delete h3{
+  font-weight: bold;
+}
+#jumb-delete h3 span{
+  color:#3C493F;
+}
+#jumb-delete .del-btns{
+  margin-top: 40px;
+  margin-bottom: -30px;
+  /* margin-left: 20px; */
+}
+#del-cancel{
+  margin-left: 20px;
+}
+#del-cancel, #del-btn{
+  transition: 0.3s;
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+}
+#del-cancel:hover, #del-btn:hover{
+  transform:translateY(-3px);
+}
+/* create tenant */
+#form-jumb{
+  margin:50px 100px;
+  border-radius: 10px;
+}
+#form-jumb h1{
+  margin-top: -20px;
+}
+#c-name, #c-age ,#c-num1, #c-gender, #c-num2, #c-num3, #c-address, #c-city, #c-country{
+  border-radius: 7px;
+  background-color: transparent;
+  background: rgba(0,0,0,0.7);
+  color:white;
+  padding: 2px 2px;
+  transition: 0.3s;
+  box-shadow: 2px 3px 15px rgba(0,0,0,0.5);
+}
+#c-name:hover, #c-age:hover,#c-gender:hover ,#c-num1:hover, #c-num2:hover,
+ #c-num3:hover, #c-address:hover, #c-city:hover, #c-country:hover{
+  transform: translateY(-3px);
+}
+#c-name{
+  margin-left: 28px;
+}
+#c-age{
+  margin-left: 40px;
+}
+#c-gender{
+  margin-left: 16px;
+}
+#c-city{
+  margin-left: 35px;
+}
+
+#c-country{
+  margin-left: 3px;
+}
+#c-num1, #c-num2, #c-num3{
+  margin-left: 5px;
+}
+#c-address{
+  height: 100px;
+  margin-left: 8px;
+}
+#create-btn{
+  margin-left: 30px;
+  margin-top: 30px;
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+#create-btn:hover{
+  transform: translateY(-3px);
+}
+/* login */
+#login-jumb{
+  margin:50px 400px;
+  border-radius: 15px;
+}
+#login-jumb h1{
+  font-family: sans-serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+#u-user{
+  border-radius: 3px;
+  background-color: rgba(0,0,0,0.3);
+  color:#000;
+  font-weight: bold;
+  padding: 2px 2px;
+  translate:0.1s;
+}
+#u-password{
+  border-radius: 3px;
+  background-color: rgba(0,0,0,0.3);
+  color:#000;
+  font-weight: bold;
+  padding: 2px 2px;
+  transition:0.1s;
+}
+
+#u-user:hover , #u-password:hover{
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+  transform: translateY(-3px);
+}
+
+#login-btn{
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+  transition: 0.1s;
+}
+#login-btn:hover{
+  transform: translateY(-3px);
+}
+.signin-nav{
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+.signin-nav a{
+  color:#000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.1s;
+}
+.signin-nav a:hover{
+  color:#fff;
+  font-size: 22px;
+}
+/* logout */
+#logout-jumb{
+  margin: 50px 100px;
+}
+#logout-jumb h3{
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+#logout-jumb p a{
+  font-size: 30px;
+  text-decoration: none;
+  /* font-style: oblique; */
+  font-weight: bold;
+  transition: 0.3s;
+}
+#logout-jumb p a:hover{
+  text-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+  font-size: 35px;
+}
+/* media query */
+
+
+@media only screen and (max-width:1200px){
+  #searchbar{
+    width:400px;
+  }
+  #add-tenant{
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  #detail-jumb{
+    margin:50px 150px;
+  }
+}
+
+@media only screen and (max-width:965px){
+  #home-jumb{
+    margin:100px 10px;
+  }
+  #searchbar{
+    width:300px;
+  }
+  #add-tenant{
+    margin-left: 100px;
+    margin-right: 10px;
+  }
+  #home-dash-cont{
+    height:100px;
+  }
+  #nav-custom{
+    height:100px;
+
+  }
+  #jumb-delete{
+    margin:50px 100px;
+  }
+}
+
+@media only screen and (max-width:900px){
+  #detail-jumb{
+    margin:50px 100px;
+  }
+  #add-tenant{
+    margin-left: 200px;
+  }
+}
+
+
+@media only screen and (max-width:783px){
+  #detail-btns a{
+    margin-left: 0;
+  }
+  #home-place{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width:664px){
+  #detail-btns a{
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  header{
+    height:100px;
+  }
+  #nav-custom{
+    height: 110px;
+  }
+  #home-dash-cont{
+    margin-bottom: 10px;
+  }
+  #searchbar{
+    height:30px;
+    width: 250px;
+  }
+  #dash-search{
+    height: 30px;
+
+  }
+  #jumb-delete{
+    height:220px;
+  }
+  .signin-nav{
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (max-width:466px){
+  #detail-jumb{
+    margin:50px 10px;
+    font-size: 14px;
+  }
+  .Dashboard a{
+    margin-left: -40px;
+  }
+  #dash-search span{
+    display: none;
+  }
+  #edit-jumb{
+    margin:50px 10px;
+  }
+  #jumb-delete{
+    margin:50px 10px;
+  }
+  #logout-jumb{
+    margin:50px 10px;
+  }
+
+}

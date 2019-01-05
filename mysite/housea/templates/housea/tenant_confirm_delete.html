@@ -1,0 +1,16 @@
+{% extends 'housea/base.html' %}
+{% block content %}
+<div class="jumbotron text-center" id="jumb-delete">
+  <h3>Confirm delete the tenant- "<span>{{ object.name|capfirst }}</span>" ?</h3>
+
+  <form method="POST">
+    {% csrf_token %}
+    <div class="del-btns">
+      <button type="submit" id="del-btn" class="btn btn-danger" name="button">Confirm Delete</button>
+      <a class="btn btn-primary" id="del-cancel" href="{% url 'tenant-detail' object.id object.slug %}">Cancel</a>
+    </div>
+  </form>
+
+</div>
+
+{% endblock %}

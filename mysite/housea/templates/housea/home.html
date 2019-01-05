@@ -1,0 +1,38 @@
+{% extends 'housea/base.html' %}
+{% block content %}
+  <div class="jumbotron" id="home-jumb">
+    <div class="container-fluid" id="home-dash-cont">
+      <nav class="navbar navbar-light bg-light" id="nav-custom">
+        <a class="navbar-brand" id="dashboard-brand">DashBoard</a>
+        <a id="add-tenant" href="{% url 'create-tenant' %}"><i class="fas fa-plus-circle"></i> Add Tenant</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" id="searchbar" placeholder="Search" aria-label="Search" name="q">
+          <button id= "dash-search" class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i><span>Search<span></button>
+        </form>
+      </nav>
+    </div>
+
+    {% for data in datas %}
+    <div class="container" id="data-cont">
+      <div class="row">
+        <div class="col">
+          <h3><a href="{% url 'tenant-detail' data.id data.slug %}">{{ data.name }}</a></h3>
+
+          <small>{{ data.age }} , {{ data.gender }}</small>
+        </div>
+        <div class="col text-center" id="home-place">
+          <i class="fas fa-map-marker-alt"></i> {{ data.city|capfirst }}, {{ data.country|capfirst }}
+        </div>
+        <div class="col" id="home-detail-btn">
+          <a class="btn btn-primary" href="{% url 'tenant-detail' data.id data.slug %}">View Details</a>
+        </div>
+      </div>
+    </div>
+    {% empty %}
+    <div class="empty ml-4">
+      <h2>No Results found</h2>
+    </div>
+    {% endfor %}
+
+  </div>
+{% endblock %}

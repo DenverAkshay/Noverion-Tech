@@ -1,0 +1,18 @@
+{% extends 'housea/base.html' %}
+{% block content %}
+  <div class="jumbotron" id='form-jumb'>
+    <div class="container">
+      <form id="tenant-form" method="POST">
+
+        <h1>Fill in the Tenant details:</h1>
+        <hr>
+        <div class="">
+          {% csrf_token %}
+          {{ form.media }}
+          {{ form.as_p }}
+        </div>
+        <input class="btn btn-success btn-lg" id="create-btn" type="submit" name="submit" value="submit">
+      </form>
+    </div>
+  </div>
+{% endblock %}

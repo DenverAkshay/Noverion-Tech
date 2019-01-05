@@ -1,0 +1,11 @@
+{% extends 'housea/base.html' %}
+{% block content %}
+<div class="jumbotron text-center" id="logout-jumb">
+  <div class="container">
+    <h3>You have successfully logged out!!</h3>
+
+    <p><a href="{% url 'login' %}">Login again?</a></p>
+
+  </div>
+</div>
+{% endblock %}
